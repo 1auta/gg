@@ -1,58 +1,68 @@
-"use client";
-import { useState } from "react";
-import slide1 from "./static/slide1.png";
-import slide2 from "./static/slide2.png";
-import slide3 from "./static/slide3.png";
+// "use client";
+// import React, { useState } from "react";
+// import Image from "next/image";
+// import slide1 from "./static/slide1.png";
+// import slide2 from "./static/slide2.png";
+// import slide3 from "./static/slide3.png";
 
-const Slider = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+// const Slider: React.FC = () => {
+//   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const handleImageClick = (index: number) => {
-    setActiveIndex(index);
-  };
+//   const slides = [
+//     {
+//       id: 1,
+//       content: "Перший слайд",
+//       image: slide1,
+//     },
+//     {
+//       id: 2,
+//       content: "Другий слайд",
+//       image: slide2,
+//     },
+//     {
+//       id: 3,
+//       content: "Третій слайд",
+//       image: slide3,
+//     },
+//   ];
 
-  const images = [
-    {
-      src: slide1.src,
-      alt: 'Slide 1',
-      width: activeIndex === 0 ? 200 : 150,
-      height: activeIndex === 0 ? 300 : 250,
-    },
-    {
-      src: slide2.src,
-      alt: 'Slide 2',
-      width: activeIndex === 1 ? 200 : 150,
-      height: activeIndex === 1 ? 300 : 250,
-    },
-    {
-      src: slide3.src,
-      alt: 'Slide 3',
-      width: activeIndex === 2 ? 200 : 150,
-      height: activeIndex === 2 ? 300 : 250,
-    },
-  ];
+//   const nextSlide = () => {
+//     setCurrentSlide((prevSlide) =>
+//       prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+//     );
+//   };
 
-  return (
-    <div className="flex justify-center items-center mt-36">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`mx-3 ${index !== 0 ? 'ml-30' : ''}`}
-        >
-          <img
-            src={image.src}
-            alt={image.alt}
-            className={`w-${image.width} h-${image.height} cursor-pointer transition-transform duration-300 transform ${
-              activeIndex === index ? 'scale-125' : 'scale-100'
-            }`}
-            onClick={() => handleImageClick(index)}
-            width={image.width}
-            height={image.height}
-          />
-        </div>
-      ))}
-    </div>
-  );
-};
+//   const prevSlide = () => {
+//     setCurrentSlide((prevSlide) =>
+//       prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+//     );
+//   };
 
-export default Slider;
+//   return (
+//     <div className="slider">
+//       <button onClick={prevSlide}>Попередній слайд</button>
+//       <div className="slide">
+//         {slides.map((slide, index) => (
+//           <div
+//             key={slide.id}
+//             className={
+//               index === currentSlide ? "slide-active" : "slide-inactive"
+//             }
+//           >
+//             <Image
+//               src={slide.image}
+//               alt={`Slide ${slide.id}`}
+//               width={300}
+//               height={100}
+//             />{" "}
+//             {/* Використання компонента Image */}
+//             <p>{slide.content}</p>
+//           </div>
+//         ))}
+//       </div>
+//       <button onClick={nextSlide}>Наступний слайд</button>
+//     </div>
+//   );
+// };
+
+// export default Slider;

@@ -22,7 +22,7 @@ export function CardRec({ dataRec }: RecProps) {
     dataRec;
   return (
     <div className="flex flex-col gap-2 rounded-lg max-w-xs pt-6 px-6 hover:shadow-md text-black bg-[#F8F8F8]">
-      <div className="relative h-60 ">
+      <div className="relative ">
         <Image
           className="object-cover rounded-2xl "
           src={imgSrc}

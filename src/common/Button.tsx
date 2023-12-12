@@ -13,7 +13,7 @@ export function Button(props: ButtonPropsType) {
   return (
     <button
       type={type}
-      className={clsx("border border-black px-6 py-3  text-white bg-black rounded-xl", additionalClasses)}
+      className={clsx("border border-black px-6 py-3  text-white bg-black rounded-xl transition-transform duration-300 transform-gpu hover:scale-105", additionalClasses)}
       onClick={onClick}
     >
       {children}

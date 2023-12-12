@@ -19,12 +19,7 @@ export function Header() {
           </div>
           <div className="flex gap-3">
             <div className="relative border border-black rounded-xl sm:hidden lg:hidden">
-              <Input
-                type="text"
-                placeholder="Enter item or restaurant you are looking for"
-                additionalClasses="w-[352px] border-none py-4 px-6 "
-              />
-              <Button additionalClasses="border-none bg-white">
+              <button>
                 <Image
                   src={require("./static/Vector.svg")}
                   alt="Search"
@@ -32,7 +27,12 @@ export function Header() {
                   height={20}
                   className="absolute right-5 top-1/3 "
                 />
-              </Button>
+              </button>
+              <Input
+                type="text"
+                placeholder="Enter item or restaurant you are..."
+                additionalClasses="w-[352px] border-none py-4 px-6 "
+              />
             </div>
             <Button additionalClasses="border-none bg-white">
               <Image

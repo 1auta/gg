@@ -2,14 +2,14 @@ import { Container } from "@/common/Container";
 import Image from "next/image";
 import { Input } from "@/common/Input";
 import { Button } from "@/common/Button";
-import Swiper from "@/components/HomePage/Slider/Swiper";
+import previe from "./static/previe2.jpeg";
 
 export function Hero() {
   return (
     <section>
       <Container>
-        <div className="flex justify-around gap-2">
-          <div className="mt-48 xs:mt-4">
+        <div className="flex justify-between gap-2">
+          <div className="mt-20 xs:mt-4">
             <div className="text-6xl leading-normal	font-medium xs:text-[43px] xs:w-full">
               <span>
                 Premium <span className="text-[#FC8019]">quality</span>
@@ -56,26 +56,25 @@ export function Hero() {
                 Get Started
               </Button>
             </div>
-            <div className="w-full h-1 bg-slate-600 my-5  hidden sm:block" >
-            </div>
+            <div className="w-full h-1 bg-slate-600 my-5  hidden sm:block"></div>
             <div>
               <div className=" mt-7 sm:mt-5">
                 <p>Popular cities in India</p>
                 <div className="flex flex-wrap gap-3 mt-7 xs:w-2/3">
                   <p>Hyderabad</p>
-                  <p className="text-[#FC8019] opacity: 0.75">Chennai</p>
+                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">Chennai</p>
                   <p>Mumbai</p>
-                  <p className="text-[#FC8019] opacity: 0.75">Bangalore</p>
+                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">Bangalore</p>
                   <p>Delhi</p>
-                  <p className="text-[#FC8019] opacity: 0.75">Kolkata</p>
+                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">Kolkata</p>
                 </div>
               </div>
-              <div className="w-full h-1 bg-slate-600 rounded-2xl my-5 hidden sm:block" >
-            </div>
+              <div className="w-full h-1 bg-slate-600 rounded-2xl my-5 hidden sm:block"></div>
             </div>
           </div>
-          <div className="mt-48 lg:hidden	xs:hidden">
-            <Swiper />
+          <div className="mt-48 lg:hidden	xs:hidden xl: ">
+            <Image src={previe} width={800} height={150} alt="previe" className="xl:hidden rounded-md shadow-2xl transition-transform duration-300 transform-gpu hover:scale-105"/>
+            {/* <Swiper /> */}
           </div>
         </div>
       </Container>
