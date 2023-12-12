@@ -5,9 +5,11 @@ export function Recomendation() {
   return (
     <section>
       <Container2>
-        <div className="mt-32 xs:mt-5 ">
-          <p className="text-2xl mb-6 xs:text-center ">Personalized recommendations</p>
-          <RecList /> 
+        <div className="mt-32 mb-10 xs:mt-5 ">
+          <p className="text-2xl mb-6 xs:text-center ">
+            Personalized recommendations
+          </p>
+          <RecList />
         </div>
       </Container2>
     </section>

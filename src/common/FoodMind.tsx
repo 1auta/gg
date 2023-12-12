@@ -57,7 +57,7 @@ const dataFood = [
 ];
 const FoodList = () => {
   return (
-    <div className="flex flex-wrap text-center xs:justify-between 2xl:flex-wrap">
+    <div className="flex justify-center flex-wrap text-center xs:justify-between">
       {dataFood.map((item, index) => (
         <Food key={index} dataFood={item} />
       ))}

@@ -62,19 +62,30 @@ export function Hero() {
                 <p>Popular cities in India</p>
                 <div className="flex flex-wrap gap-3 mt-7 xs:w-2/3">
                   <p>Hyderabad</p>
-                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">Chennai</p>
+                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">
+                    Chennai
+                  </p>
                   <p>Mumbai</p>
-                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">Bangalore</p>
+                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">
+                    Bangalore
+                  </p>
                   <p>Delhi</p>
-                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">Kolkata</p>
+                  <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">
+                    Kolkata
+                  </p>
                 </div>
               </div>
               <div className="w-full h-1 bg-slate-600 rounded-2xl my-5 hidden sm:block"></div>
             </div>
           </div>
           <div className="mt-48 lg:hidden	xs:hidden xl: ">
-            <Image src={previe} width={800} height={150} alt="previe" className="xl:hidden rounded-md shadow-2xl transition-transform duration-300 transform-gpu hover:scale-105"/>
-            {/* <Swiper /> */}
+            <Image
+              src={previe}
+              width={800}
+              height={150}
+              alt="previe"
+              className="xl:hidden rounded-md shadow-2xl transition-transform duration-300 transform-gpu hover:scale-105"
+            />
           </div>
         </div>
       </Container>
