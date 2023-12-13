@@ -46,19 +46,10 @@ export function Hero() {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div className="flex flex-wrap justify-between gap-2 ">
-              <Input
-                placeholder="Enter your delivery location"
-                type="text"
-                additionalClasses="w-[600px] xs:w-full"
-              />
-              <Button additionalClasses="w-[145px] rounded-xl bg-black py-4 px-6 ">
-                Get Started
-              </Button>
-            </div>
+            <div className="flex flex-wrap justify-between gap-2 "></div>
             <div className="w-full h-1 bg-slate-600 my-5  hidden sm:block"></div>
             <div>
-              <div className=" mt-7 sm:mt-5">
+              <div className=" mt-5 sm:mt-5">
                 <p>Popular cities in India</p>
                 <div className="flex flex-wrap gap-3 mt-7 xs:w-2/3">
                   <p>Hyderabad</p>

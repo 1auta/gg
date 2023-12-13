@@ -21,7 +21,6 @@ export default function RootLayout({
       <body
         className={`${popins.className} flex flex-col justify-between h-full leading-normal	`}
       >
-        <Header />
         <main className="flex-auto ">
           {children}
         </main>

@@ -7,7 +7,7 @@ export function Mind(){
         <section>
             <Container2>
                 <div className="mt-32 xs:mt-5 ">
-                    <p className="text-2xl mb-6 xs:text-center">What’s on your mind?</p>
+                    <p className="text-2xl mb-6 xs:text-center">New recipes will be added soon</p>
                     <FoodList/>
                 </div>
             </Container2>

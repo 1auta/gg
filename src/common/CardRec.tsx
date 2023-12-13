@@ -17,6 +17,7 @@ type RecProps = {
     imgPrice: string;
   };
 };
+
 export function CardRec({ dataRec }: RecProps) {
   const { title, description, imgSrc, price, subtitle, imgPrice, imgTime } =
     dataRec;

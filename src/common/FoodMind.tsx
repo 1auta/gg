@@ -20,7 +20,7 @@ export function Food({ dataFood }: dataFoodProps) {
     <section>
       <Container2>
         <div>
-          <div>
+          <div className="transition-transform duration-300 transform-gpu hover:scale-110">
             {imgSrc && <Image src={imgSrc} alt={title} width={160} height={160} className="hover:shadow-xl rounded-full" />}
             {title && <p className="mt-4 xs:mb-4 xs:mt-2" >{title}</p>}
           </div>
@@ -57,7 +57,7 @@ const dataFood = [
 ];
 const FoodList = () => {
   return (
-    <div className="flex justify-center flex-wrap text-center xs:justify-between">
+    <div className="flex justify-center flex-wrap text-center xs:justify-between ">
       {dataFood.map((item, index) => (
         <Food key={index} dataFood={item} />
       ))}

@@ -1,4 +1,3 @@
-import { Container } from "@/common/Container";
 import Image from "next/image";
 import footerLogo from "./static/Subtract.svg";
 import Link from "next/link";

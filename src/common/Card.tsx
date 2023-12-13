@@ -4,7 +4,6 @@ import Image from "next/image";
 import menu1 from "@/components/HomePage/Menu/static/menu1.png";
 import menu2 from "@/components/HomePage/Menu/static/menu2.png";
 import menu3 from "@/components/HomePage/Menu/static/menu3.png";
-import menu4 from "@/components/HomePage/Menu/static/menu4.png";
 import recMenu1 from "../components/HomePage/Recomendation/static/RecMenu1.jpeg";
 import recMenu2 from "../components/HomePage/Recomendation/static/RecMenu2.jpeg";
 import recMenu3 from "../components/HomePage/Recomendation/static/RecMenu3.jpeg";
@@ -36,8 +35,6 @@ export function Card({ data }: CardProps) {
     imgSrc,
     price,
     subtitle,
-    rating,
-    imgIcon,
     imgTime,
     imgPeople,
     modaltext,
@@ -68,7 +65,7 @@ export function Card({ data }: CardProps) {
         <div className="flex justify-between">
           <div className="flex gap-2">
             <Image src={imgPeople} alt={title} width={25} height={25} />
-            <div>${price}</div>
+            <div>{price}</div>
           </div>
           <div className="flex gap-2">
             <Image src={imgTime} alt={title} width={25} height={25} />
@@ -77,9 +74,15 @@ export function Card({ data }: CardProps) {
         </div>
         {showModal && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="bg-white w-[650px] h-[400px] rounded-lg p-4 flex relative">
+            <div className="bg-white w-[650px] h-[400px] rounded-lg p-4 flex relative xs:w-96 text-sm">
               <div className="flex-none mr-4">
-                <Image src={imgSrc} alt={title} width={250} height={250} />
+                <Image
+                  src={imgSrc}
+                  alt={title}
+                  width={250}
+                  height={250}
+                  className="xs:w-40"
+                />
               </div>
               <div className="flex flex-col w-full">
                 {/* Modal content */}
@@ -121,7 +124,6 @@ export const data = [
     imgSrc: menu2.src,
     title: "Uma Parlour ",
     description: "South Indian",
-    price: "200 for you",
     rating: 5.0,
     imgIcon: star.src,
     subtitle: "20 minutes",
@@ -134,7 +136,6 @@ export const data = [
     imgSrc: menu3.src,
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
-    price: "250 for you",
     rating: 4.5,
     imgIcon: star.src,
     subtitle: "40 minutes",
@@ -147,7 +148,6 @@ export const data = [
     imgSrc: menu3.src,
     title: "The Good Bowl",
     description: "North Indian, Punjabi",
-    price: "170 for you",
     rating: 4.8,
     imgIcon: star.src,
     subtitle: "1 hours",
@@ -160,10 +160,9 @@ export const data = [
     imgSrc: recMenu1.src,
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
-    price: "250 for you",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "40 minutes",
+    subtitle: "50 minutes",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -173,10 +172,9 @@ export const data = [
     imgSrc: recMenu2.src,
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
-    price: "250 for you",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "40 minutes",
+    subtitle: "10 minutes",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -186,10 +184,9 @@ export const data = [
     imgSrc: recMenu3.src,
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
-    price: "250 for you",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "40 minutes",
+    subtitle: "25 minutes",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -199,10 +196,9 @@ export const data = [
     imgSrc: recMenu4.src,
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
-    price: "250 for you",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "40 minutes",
+    subtitle: "20 minutes",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
