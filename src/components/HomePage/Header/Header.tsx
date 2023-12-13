@@ -19,16 +19,6 @@ export function Header() {
             <span className="text-3xl font-bolt">FitMe</span>
           </div>
           <div className="flex gap-3">
-            <Link href={"/korzina"}>
-              <Button additionalClasses="border-none bg-white">
-                <Image
-                  src={require("./static/Bag.svg")}
-                  alt="Bag"
-                  width={30}
-                  height={30}
-                />
-              </Button>
-            </Link>
             <Link href={"/login"}>
               <Button additionalClasses="py-4 px-6">Sign In</Button>
             </Link>

@@ -1,4 +1,3 @@
-import { Header } from "@/components/HomePage/Header/Header";
 import { Footer } from "@/components/HomePage/Footer/Footer";
 import "./globals.css";
 import { Inter, Poppins } from "next/font/google";

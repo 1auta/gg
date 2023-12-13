@@ -12,11 +12,11 @@ export function Hero() {
           <div className="mt-20 xs:mt-4">
             <div className="text-6xl leading-normal	font-medium xs:text-[43px] xs:w-full">
               <span>
-                Premium <span className="text-[#FC8019]">quality</span>
+                Преміум <span className="text-[#FC8019]">якість</span>
               </span>
               <span>
-                <span className="flex flex-wrap gap-3">
-                  Food for your
+                <span className="flex flex-wrap gap-1">
+                  Їжі для вашого{" "}
                   <Image
                     src={require("./static/Component4.png")}
                     alt="Component 4"
@@ -25,19 +25,13 @@ export function Hero() {
                     className="xs:w-20"
                   />
                   <span>
-                    <p className="text-[#FC8019] sm:hidden">healthy</p>
+                    <p className="text-[#FC8019] sm:hidden">здоровʼя &</p>
                   </span>
                 </span>
               </span>
               <span className="flex gap-5">
-                <Image
-                  src={require("./static/Component5.png")}
-                  alt="AppleIcon"
-                  width={125}
-                  height={75}
-                  className="xs:w-20 xs:h-15"
-                ></Image>
-                <span className="text-[#FC8019]">& Daily Life</span>
+                <p>Повсякденного</p>
+                <span className="text-[#FC8019]"> життя</span>
               </span>
             </div>
             <p className="my-7 w-[44.5rem] xs:w-full text-lg">
@@ -50,7 +44,7 @@ export function Hero() {
             <div className="w-full h-1 bg-slate-600 my-5  hidden sm:block"></div>
             <div>
               <div className=" mt-5 sm:mt-5">
-                <p>Popular cities in India</p>
+                <p>Популярні страви в країнах</p>
                 <div className="flex flex-wrap gap-3 mt-7 xs:w-2/3">
                   <p>Hyderabad</p>
                   <p className="text-[#FC8019] opacity: 0.75 transition-transform duration-300 transform-gpu hover:scale-105">

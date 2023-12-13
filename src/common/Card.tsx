@@ -110,11 +110,11 @@ export function Card({ data }: CardProps) {
 export const data = [
   {
     imgSrc: menu1.src,
-    title: "Ramachandra Parlour",
-    description: "South Indian",
+    title: "Омлет на молоці",
+    description: "Україна",
     rating: 4.0,
     imgIcon: star.src,
-    subtitle: "30 minutes",
+    subtitle: "30 хвилин",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -122,11 +122,11 @@ export const data = [
   },
   {
     imgSrc: menu2.src,
-    title: "Uma Parlour ",
-    description: "South Indian",
+    title: "Китайський суп",
+    description: "Китай",
     rating: 5.0,
     imgIcon: star.src,
-    subtitle: "20 minutes",
+    subtitle: "40 хвилин",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -134,11 +134,11 @@ export const data = [
   },
   {
     imgSrc: menu3.src,
-    title: "Swap - Diet Meal Box",
-    description: "Healthy Food, Salads",
+    title: "Вівсянка на молоці",
+    description: "Healthy Food",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "40 minutes",
+    subtitle: "20 хвилин",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -146,11 +146,11 @@ export const data = [
   },
   {
     imgSrc: menu3.src,
-    title: "The Good Bowl",
-    description: "North Indian, Punjabi",
+    title: "Вівсянка",
+    description: "Healthy Food, wegeterian",
     rating: 4.8,
     imgIcon: star.src,
-    subtitle: "1 hours",
+    subtitle: "30 хвилин",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -158,11 +158,11 @@ export const data = [
   },
   {
     imgSrc: recMenu1.src,
-    title: "Swap - Diet Meal Box",
-    description: "Healthy Food, Salads",
+    title: "Кебаб",
+    description: "Турція",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "50 minutes",
+    subtitle: "15 хвилин",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -170,11 +170,11 @@ export const data = [
   },
   {
     imgSrc: recMenu2.src,
-    title: "Swap - Diet Meal Box",
-    description: "Healthy Food, Salads",
+    title: "Pizzza",
+    description: "Healthy Food, italia",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "10 minutes",
+    subtitle: "50 хвилин",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -182,11 +182,11 @@ export const data = [
   },
   {
     imgSrc: recMenu3.src,
-    title: "Swap - Diet Meal Box",
+    title: "Лаваша з куркою",
     description: "Healthy Food, Salads",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "25 minutes",
+    subtitle: "25 хвилин",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -194,11 +194,11 @@ export const data = [
   },
   {
     imgSrc: recMenu4.src,
-    title: "Swap - Diet Meal Box",
+    title: "Бокс салату",
     description: "Healthy Food, Salads",
     rating: 4.5,
     imgIcon: star.src,
-    subtitle: "20 minutes",
+    subtitle: "20 хвилин",
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
@@ -207,7 +207,7 @@ export const data = [
 ];
 const CardList = () => {
   return (
-    <div className="flex flex-wrap gap-4 justify-around xs:justify-center">
+    <div className="flex flex-wrap gap-y-6 justify-around xs:justify-center">
       {data.map((item, index) => (
         <Card key={index} data={item} />
       ))}

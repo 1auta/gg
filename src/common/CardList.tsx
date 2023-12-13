@@ -3,7 +3,7 @@ import { data } from "./Card";
 
 const CardList = () => {
     return (
-      <div className="flex flex-wrap gap-4 justify-around xs:justify-center">
+      <div className="flex flex-wrap justify-around xs:justify-center">
       {data.map((item, index) => (
           <Card key={index} data={item} />
         ))}
