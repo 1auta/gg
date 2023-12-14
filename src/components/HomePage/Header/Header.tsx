@@ -1,6 +1,5 @@
 import { Container } from "@/common/Container";
 import Image from "next/image";
-import { Input } from "@/common/Input";
 import { Button } from "@/common/Button";
 import Link from "next/link";
 

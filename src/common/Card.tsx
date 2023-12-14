@@ -47,8 +47,8 @@ export function Card({ data }: CardProps) {
   };
 
   return (
-    <div className="flex flex-col gap-2 rounded-lg max-w-xs pt-6 px-6 hover:shadow-md text-black bg-[#F8F8F8]">
-      <div className="relative  " onClick={toggleModal}>
+    <div className="flex flex-col gap-2 rounded-lg max-w-xs pt-6 px-6 hover:shadow-md text-black bg-[#F8F8F8] xs:w-96">
+      <div className="relative " onClick={toggleModal}>
         <Image
           className="object-cover rounded-2xl "
           src={imgSrc}

@@ -10,7 +10,6 @@ export function Menu() {
             <p className="mb-6 text-2xl xs:text-center">Цікаві рецепти</p>
             <CardList />
           </div>
-          <div className="w-full h-1 bg-slate-600 rounded-2xl hidden sm:block"></div>
         </div>
       </Container2>
     </section>

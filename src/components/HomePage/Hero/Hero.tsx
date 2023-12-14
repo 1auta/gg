@@ -1,16 +1,14 @@
 import { Container } from "@/common/Container";
 import Image from "next/image";
-import { Input } from "@/common/Input";
-import { Button } from "@/common/Button";
 import previe from "./static/previe2.jpeg";
 
 export function Hero() {
   return (
     <section>
       <Container>
-        <div className="flex justify-between gap-2">
+        <div className="flex justify-between gap-2 xs:text-sm">
           <div className="mt-20 xs:mt-4">
-            <div className="text-6xl leading-normal	font-medium xs:text-[43px] xs:w-full">
+            <div className="text-6xl leading-normal	font-medium xs:text-3xl xs:w-full">
               <span>
                 Преміум <span className="text-[#FC8019]">якість</span>
               </span>
@@ -35,10 +33,11 @@ export function Hero() {
               </span>
             </div>
             <p className="my-7 w-[44.5rem] xs:w-full text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Даний сайт допоможе вам знайти ваш улюблений рецепт. Навіть якщо
+              ви не знайдете тут рецепта який вам потрібен, у нас є пошук
+              рецептів помережі інтернет. Також ми маємо рекомендації про пошук
+              рецептів в інтернеті, та список рецептів чкі будуть добавлені в
+              найблиєчому часі
             </p>
             <div className="flex flex-wrap justify-between gap-2 "></div>
             <div className="w-full h-1 bg-slate-600 my-5  hidden sm:block"></div>

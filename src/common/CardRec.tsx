@@ -39,10 +39,6 @@ export function CardRec({ dataRec }: RecProps) {
         </div>
         <div className="flex justify-between">
           <div className="flex gap-2">
-            <Image src={imgPrice} alt={title} width={25} height={25} />
-            <div>${price}</div>
-          </div>
-          <div className="flex gap-2">
             <Image src={imgTime} alt={title} width={25} height={25} />
             <h4 className="text-md text-gray-700">{subtitle}</h4>
           </div>
@@ -53,7 +49,7 @@ export function CardRec({ dataRec }: RecProps) {
 }
 export function RecList() {
   return (
-    <div className="flex flex-wrap gap-y-6  justify-around xs:justify-center">
+    <div className="flex flex-wrap gap-y-6 justify-around xs:justify-center">
       {dataRec.map((item, index) => (
         <CardRec key={index} dataRec={item} />
       ))}
@@ -66,7 +62,7 @@ const dataRec = [
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
     price: "222",
-    subtitle: "40 minutes",
+    subtitle: "40 хвилин",
     imgTime: Time.src,
     imgPrice: Price.src,
   },
@@ -75,7 +71,7 @@ const dataRec = [
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
     price: "250",
-    subtitle: "40 minutes",
+    subtitle: "20 хвилин",
     imgTime: Time.src,
     imgPrice: Price.src,
   },
@@ -84,7 +80,7 @@ const dataRec = [
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
     price: "250",
-    subtitle: "40 minutes",
+    subtitle: "10 хвилин",
     imgTime: Time.src,
     imgPrice: Price.src,
   },
@@ -93,7 +89,7 @@ const dataRec = [
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
     price: "200",
-    subtitle: "40 minutes",
+    subtitle: "25 хвилин",
     imgTime: Time.src,
     imgPrice: Price.src,
   },
@@ -102,7 +98,7 @@ const dataRec = [
     title: "Swap - Diet Meal Box",
     description: "Healthy Food, Salads",
     price: "222",
-    subtitle: "40 minutes",
+    subtitle: "50 хвилин",
     imgTime: Time.src,
     imgPrice: Price.src,
   },
