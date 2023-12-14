@@ -130,7 +130,7 @@ export const data = [
     imgTime: timeIcon.src,
     imgPeople: peopleIcon.src,
     modaltext:
-      "Налийте воду в каструлю.  перець чилі (нарізаний кільцями). Прикрийте кришкою і доведіть до кипіння та залиште на 5 хв. Додати пасту том ям. На середньо-низькій температури залишити ще на 5 хвилин. Додайте креветки, гриби (більшими шматками), цибулю (більшими шматками), томати (половинками), рибний соус. Проварити 10 хвилин. На останніх трьох хвилинах додайте кокосове молоко (за бажанням) листя кінзи та сік лайма (вичавіть з одного лайму).Суп готовий для 4-6 чоловік. Смачного:)",
+      "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam molestiae maxime aperiam labore dignissimos, omnis dolores quibusdam possimus incidunt veniam facilis deleniti, inventore fugit? Cupiditate obcaecati corrupti officia corporis ea praesentium fugiat mollitia eos a cumque molestiae, in, ipsam iure. ",
   },
   {
     imgSrc: menu3.src,
